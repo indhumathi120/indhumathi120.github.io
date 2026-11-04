@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indhumathi C | Java Backend Developer & Generative AI Specialist</title>
+  <meta name="description" content="Professional portfolio of Indhumathi C. Java Backend Developer specializing in Java 17/25, Spring Boot 3/4, Microservices, PostgreSQL, Enterprise Legacy Modernization, and Azure OpenAI LLM/RAG integrations.">
+  <meta name="keywords" content="Indhumathi C, Java Backend Developer, Spring Boot, Microservices, PostgreSQL, Azure OpenAI, RAG, CloudFrame, Odessa Technologies, Bengaluru">
+  <meta name="author" content="Indhumathi C">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Indhumathi C | Java Backend Developer & Generative AI Specialist">
+  <meta property="og:description" content="3+ years of experience architecting enterprise Java microservices, COBOL-to-Java modernization, and Generative AI integrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://linkedin.com/in/indhumathi-c-a5277b23a/">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          colors: {
+            corporate: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#0b0f19',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-grid-pattern selection:bg-blue-600 selection:text-white">
+
+  <!-- Toast Notification -->
+  <div id="toast">Copied to clipboard</div>
+
+  <!-- Executive Header / Navigation -->
+  <header class="sticky top-0 z-40 w-full glass-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Monogram & Identity -->
+      <a href="#" class="flex items-center space-x-3.5 group">
+        <div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-700/80 flex items-center justify-center font-mono font-bold text-blue-400 shadow-sm group-hover:border-blue-500 transition-colors">
+          IC
+        </div>
+        <div>
+          <span class="font-bold text-base tracking-tight text-slate-100 group-hover:text-blue-400 transition-colors block">Indhumathi C</span>
+          <span class="text-xs text-slate-400 block">Java Backend & GenAI Specialist</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-300">
+        <a href="#overview" class="hover:text-blue-400 transition-colors">Overview</a>
+        <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+        <a href="#architecture" class="hover:text-blue-400 transition-colors">Architecture</a>
+        <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+        <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+        <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Header Utilities -->
+      <div class="hidden md:flex items-center space-x-3">
+        <!-- Print / PDF Resume Button -->
+        <button class="print-resume-btn px-3 py-2 rounded-lg border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white text-xs font-medium flex items-center space-x-1.5 transition-colors" title="Print or Save Resume as PDF">
+          <i data-lucide="printer" class="w-4 h-4 text-blue-400"></i>
+          <span>Print Resume</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-lg border border-slate-700/80 bg-slate-900/60 text-slate-300 hover:text-blue-400 transition-colors">
+          <i data-lucide="moon" class="theme-icon-moon w-4 h-4"></i>
+          <i data-lucide="sun" class="theme-icon-sun w-4 h-4 hidden"></i>
+        </button>
+
+        <!-- Verified LinkedIn -->
+        <a href="https://linkedin.com/in/indhumathi-c-a5277b23a/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg border border-slate-700/80 bg-slate-900/60 text-slate-300 hover:text-blue-400 hover:border-blue-500/50 transition-colors" title="LinkedIn Profile">
+          <i class="fab fa-linkedin-in text-sm"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/indhumathi120" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg border border-slate-700/80 bg-slate-900/60 text-slate-300 hover:text-white hover:border-slate-500 transition-colors" title="GitHub Profile">
+          <i class="fab fa-github text-sm"></i>
+        </a>
+
+        <a href="#contact" class="px-4 py-2 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-sm">
+          Contact
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="flex items-center space-x-2 md:hidden">
+        <button class="print-resume-btn p-2 rounded-lg border border-slate-700 text-slate-300" title="Print Resume">
+          <i data-lucide="printer" class="w-4 h-4"></i>
+        </button>
+        <button id="theme-toggle-mobile" aria-label="Toggle theme" class="p-2 rounded-lg border border-slate-700 text-slate-300">
+          <i data-lucide="moon" class="theme-icon-moon w-4 h-4"></i>
+          <i data-lucide="sun" class="theme-icon-sun w-4 h-4 hidden"></i>
+        </button>
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="p-2 rounded-lg border border-slate-700 text-slate-300">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-950 px-4 py-5 space-y-3">
+      <a href="#overview" class="mobile-nav-link block px-3 py-2 rounded text-sm text-slate-300 hover:bg-slate-900">Overview</a>
+      <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded text-sm text-slate-300 hover:bg-slate-900">Experience</a>
+      <a href="#architecture" class="mobile-nav-link block px-3 py-2 rounded text-sm text-slate-300 hover:bg-slate-900">Architecture</a>
+      <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded text-sm text-slate-300 hover:bg-slate-900">Skills</a>
+      <a href="#education" class="mobile-nav-link block px-3 py-2 rounded text-sm text-slate-300 hover:bg-slate-900">Education</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded text-sm text-slate-300 hover:bg-slate-900">Contact</a>
+      <div class="pt-3 border-t border-slate-800 flex items-center space-x-3">
+        <a href="https://linkedin.com/in/indhumathi-c-a5277b23a/" target="_blank" class="p-2 rounded border border-slate-700 text-slate-300 hover:text-blue-400">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/indhumathi120" target="_blank" class="p-2 rounded border border-slate-700 text-slate-300 hover:text-white">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#contact" class="flex-1 text-center py-2 text-xs font-semibold rounded bg-blue-600 text-white">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-24">
+
+    <!-- Hero Section -->
+    <section id="overview" class="pt-6 sm:pt-12">
+      <div class="pro-card p-8 sm:p-12 relative overflow-hidden">
+        
+        <div class="max-w-4xl space-y-6">
+          
+          <!-- Location & Status Badge -->
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md bg-slate-900 border border-slate-700/80 text-xs font-medium text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Bengaluru, India • Available for Senior Java Backend & GenAI Roles</span>
+          </div>
+
+          <!-- Name & Role -->
+          <div class="space-y-2">
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+              Indhumathi C
+            </h1>
+            <p class="text-xl sm:text-2xl font-semibold text-blue-400">
+              Java Backend Developer • Enterprise Modernization • Generative AI Specialist
+            </p>
+          </div>
+
+          <!-- Executive Summary -->
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Java Backend Developer with <strong>3+ years of experience</strong> specializing in <span class="text-white font-medium">Java 17/25</span>, <span class="text-white font-medium">Spring Boot 3/4</span>, <span class="text-white font-medium">Microservices</span>, and <span class="text-white font-medium">PostgreSQL</span>. Demonstrated track record in enterprise mainframe modernization (COBOL-to-Java), heterogeneous data translation (VSAM to PostgreSQL), IBM Open Liberty application server optimization, and production-grade Generative AI integrations leveraging <span class="text-blue-300 font-medium">Azure OpenAI, RAG, and Model Context Protocol (MCP)</span>.
+          </p>
+
+          <!-- Executive Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#experience" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-colors flex items-center space-x-2 shadow-sm">
+              <span>View Career History</span>
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </a>
+
+            <a href="#architecture" class="px-5 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 bg-slate-900/60 text-slate-200 font-medium text-sm transition-colors flex items-center space-x-2">
+              <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i>
+              <span>Architecture Case Studies</span>
+            </a>
+
+            <a href="https://linkedin.com/in/indhumathi-c-a5277b23a/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg border border-slate-700 hover:border-blue-500/60 bg-slate-900/60 text-slate-300 hover:text-blue-400 font-medium text-sm transition-colors flex items-center space-x-2">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+
+            <button class="print-resume-btn px-4 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 bg-slate-900/60 text-slate-300 hover:text-white font-medium text-sm transition-colors flex items-center space-x-2">
+              <i data-lucide="printer" class="w-4 h-4 text-emerald-400"></i>
+              <span>Export PDF</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Executive Metrics Row -->
+        <div class="mt-12 pt-8 border-t border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white">3+ Years</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Enterprise Experience</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-blue-400">4 Products</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Continuum, Atlas, Code Navigator, LeaseWave</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">89.90%</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">B.E. Degree (Distinction)</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-slate-200">5+ Mentees</div>
+            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Engineers Mentored</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Core Engineering Competencies -->
+    <section>
+      <div class="mb-8">
+        <h2 class="text-xs font-mono font-semibold tracking-wider text-blue-400 uppercase">Core Competencies</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">Enterprise Architecture Pillars</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="pro-card p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+            <i data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Distributed Backend & Microservices</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Engineering robust Java 17/25 Spring Boot microservices, Spring Data JPA, RESTful API design, external application server deployments (IBM Open Liberty), and multi-target runtime call resolution.
+          </p>
+        </div>
+
+        <div class="pro-card p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <i data-lucide="bot" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Generative AI & LLM Automation</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Productionizing AI-assisted workflows using Azure OpenAI, Retrieval-Augmented Generation (RAG), vector stores, and Model Context Protocol (MCP) to automate legacy documentation and accelerate system discovery.
+          </p>
+        </div>
+
+        <div class="pro-card p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+            <i data-lucide="database" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Enterprise Modernization & Data Integrity</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Executing automated COBOL-to-Java migration, bridging mainframe VSAM datasets directly to PostgreSQL, and maintaining transactional consistency across high-throughput enterprise workloads.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section id="experience">
+      <div class="mb-10">
+        <h2 class="text-xs font-mono font-semibold tracking-wider text-blue-400 uppercase">Employment History</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">Professional Experience</h3>
+      </div>
+
+      <div class="space-y-8 timeline-track pl-8 sm:pl-10">
+
+        <!-- 1. CloudFrame -->
+        <div class="pro-card p-6 sm:p-8 relative">
+          <!-- Marker dot -->
+          <div class="absolute -left-[2.65rem] sm:-left-[3.15rem] top-7 w-4 h-4 rounded-full bg-blue-500 border-4 border-slate-950"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-2">
+            <div>
+              <div class="flex items-center space-x-3">
+                <h4 class="text-xl font-bold text-white">CloudFrame</h4>
+                <span class="badge-clean text-emerald-400 border-emerald-500/30">Current Role</span>
+              </div>
+              <p class="text-sm font-medium text-blue-400 mt-0.5">Software Engineer — Backend & Modernization Architecture</p>
+              <p class="text-xs text-slate-400 font-mono mt-0.5">Flagship Platforms: Continuum • Code Navigator • Atlas</p>
+            </div>
+            <div class="text-left sm:text-right font-mono text-xs text-slate-400">
+              <div>Aug 2024 - Present</div>
+              <div>Bengaluru, India</div>
+            </div>
+          </div>
+
+          <div class="mt-6 space-y-6 text-sm text-slate-300">
+            
+            <div>
+              <h5 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-2">Backend Development & Architecture</h5>
+              <ul class="space-y-2 list-disc list-inside marker:text-blue-400">
+                <li>Engineered core Java and Spring Boot backend microservices for CloudFrame's enterprise <span class="text-white font-medium">COBOL-to-Java modernization platform</span>, powering automated transformation and legacy migration.</li>
+                <li>Designed and implemented high-reliability RESTful APIs and execution workflows for artifact management, dependency resolution, application configuration, and modernization pipeline orchestration.</li>
+                <li><strong class="text-blue-300">Generative AI Integration:</strong> Integrated AI-powered documentation generation for legacy application artifacts using Azure OpenAI/LLMs, drastically reducing manual reverse-engineering analysis.</li>
+                <li><strong class="text-emerald-300">Database Modernization:</strong> Extended IBM mainframe VSAM data processing capabilities to relational PostgreSQL, ensuring data integrity and zero-loss parity across enterprise production migrations.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-2">Performance & Application Server Optimization</h5>
+              <ul class="space-y-2 list-disc list-inside marker:text-blue-400">
+                <li>Enabled enterprise WAR packaging and deployment on <span class="text-white font-medium">IBM Open Liberty</span> by refactoring Spring Boot application context initialization and optimizing packaging for external application servers.</li>
+                <li>Enhanced dynamic call resolution and runtime dependency mapping, guaranteeing deterministic handling of multiple program targets across diverse legacy structures.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-2">Engineering Leadership, Testing & Quality</h5>
+              <ul class="space-y-2 list-disc list-inside marker:text-blue-400">
+                <li><strong class="text-white">Mentorship:</strong> Mentored 5+ college students on software development projects, providing actionable guidance on technical implementation, debugging, and patterns.</li>
+                <li>Conducted rigorous code reviews for interns, providing technical feedback on coding standards and engineering best practices.</li>
+                <li>Developed automated test cases, database configurations, regression validation workflows, and CI/CD pipeline validations (Maven, Git, Linux).</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+            <span class="badge-clean">Java 17/25</span>
+            <span class="badge-clean">Spring Boot 3</span>
+            <span class="badge-clean">PostgreSQL</span>
+            <span class="badge-clean">Azure OpenAI</span>
+            <span class="badge-clean">IBM Open Liberty</span>
+            <span class="badge-clean">VSAM</span>
+            <span class="badge-clean">COBOL Modernization</span>
+            <span class="badge-clean">Docker</span>
+            <span class="badge-clean">Maven</span>
+          </div>
+        </div>
+
+        <!-- 2. Techplement -->
+        <div class="pro-card p-6 sm:p-8 relative">
+          <!-- Marker dot -->
+          <div class="absolute -left-[2.65rem] sm:-left-[3.15rem] top-7 w-4 h-4 rounded-full bg-slate-600 border-4 border-slate-950"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-2">
+            <div>
+              <div class="flex items-center space-x-3">
+                <h4 class="text-xl font-bold text-white">Techplement</h4>
+                <span class="badge-clean text-slate-300">Contract / Freelance</span>
+              </div>
+              <p class="text-sm font-medium text-slate-300 mt-0.5">Java Backend Developer & Technical Trainer</p>
+            </div>
+            <div class="text-left sm:text-right font-mono text-xs text-slate-400">
+              <div>June 2024 - July 2024</div>
+              <div>Bengaluru, India</div>
+            </div>
+          </div>
+
+          <div class="mt-4 space-y-2 text-sm text-slate-300">
+            <ul class="space-y-2 list-disc list-inside marker:text-blue-400">
+              <li>Integrated training platform modules into the core system using Java, optimizing backend performance and responsiveness.</li>
+              <li>Mentored interns through structured hands-on Java development sessions, live debugging workshops, and code quality evaluations.</li>
+              <li>Collaborated with the core engineering team to improve application infrastructure, testing coverage, and overall maintainability.</li>
+            </ul>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-800 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+            <span class="badge-clean">Java</span>
+            <span class="badge-clean">REST APIs</span>
+            <span class="badge-clean">Technical Coaching</span>
+            <span class="badge-clean">Code Reviews</span>
+          </div>
+        </div>
+
+        <!-- 3. Odessa Technologies -->
+        <div class="pro-card p-6 sm:p-8 relative">
+          <!-- Marker dot -->
+          <div class="absolute -left-[2.65rem] sm:-left-[3.15rem] top-7 w-4 h-4 rounded-full bg-slate-600 border-4 border-slate-950"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-2">
+            <div>
+              <div class="flex items-center space-x-3">
+                <h4 class="text-xl font-bold text-white">Odessa Technologies</h4>
+                <span class="badge-clean text-blue-400">On-Campus Placement</span>
+              </div>
+              <p class="text-sm font-medium text-blue-400 mt-0.5">Associate Software Engineer</p>
+              <p class="text-xs text-slate-400 font-mono mt-0.5">Flagship Product: LeaseWave (Enterprise Asset Finance Platform)</p>
+            </div>
+            <div class="text-left sm:text-right font-mono text-xs text-slate-400">
+              <div>May 2023 - April 2024</div>
+              <div>Bengaluru, India</div>
+            </div>
+          </div>
+
+          <div class="mt-6 space-y-4 text-sm text-slate-300">
+            <div>
+              <h5 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-2">Backend Microservices & Financial Workflows</h5>
+              <ul class="space-y-2 list-disc list-inside marker:text-blue-400">
+                <li>Developed and enhanced Java and Spring Boot backend services for Odessa's flagship <span class="text-white font-medium">LeaseWave</span> enterprise lease management platform, supporting mission-critical financial workflows and lease lifecycles.</li>
+                <li>Built and maintained RESTful APIs and Spring Boot microservices integrated with <span class="text-white font-medium">MongoDB</span>, ensuring high-throughput data processing and transactional reliability.</li>
+                <li>Implemented backend enhancements to streamline lease calculations, asset tracking, and modular data flows.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-2">System Integration & Reliability</h5>
+              <ul class="space-y-2 list-disc list-inside marker:text-blue-400">
+                <li>Contributed to financial data integration and reporting workflows, ensuring consistent ledger records and balance calculations.</li>
+                <li>Enhanced backend integration layers to support interoperability between LeaseWave and external financial/banking systems.</li>
+                <li>Participated in Agile development, resolving integration defects, writing test routines, and collaborating with QA engineers.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap gap-1.5 text-xs font-mono text-slate-400">
+            <span class="badge-clean">Java</span>
+            <span class="badge-clean">Spring Boot</span>
+            <span class="badge-clean">Microservices</span>
+            <span class="badge-clean">MongoDB</span>
+            <span class="badge-clean">RESTful APIs</span>
+            <span class="badge-clean">Financial Systems</span>
+            <span class="badge-clean">Agile/Scrum</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Architecture & Systems Case Studies -->
+    <section id="architecture">
+      <div class="mb-10">
+        <h2 class="text-xs font-mono font-semibold tracking-wider text-blue-400 uppercase">Engineering Case Studies</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">System Architecture Deep-Dives</h3>
+        <p class="text-slate-400 text-sm mt-1">Select an architectural implementation to review the technical context, challenge, and engineering solution.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Case Study Selector (Left) -->
+        <div class="lg:col-span-4 space-y-2">
+          
+          <button class="arch-selector-btn w-full text-left p-4 rounded-lg border-l-4 border-blue-500 bg-slate-800/90 text-white font-medium text-sm transition-all shadow-sm" data-target="arch-continuum">
+            <div class="font-bold">CloudFrame Continuum</div>
+            <div class="text-xs text-slate-400 mt-1 font-mono">Automated COBOL-to-Java Engine</div>
+          </button>
+
+          <button class="arch-selector-btn w-full text-left p-4 rounded-lg border-l-2 border-slate-800 bg-slate-900/40 text-slate-400 hover:text-slate-200 font-medium text-sm transition-all" data-target="arch-ai-doc">
+            <div class="font-bold">Atlas & Code Navigator</div>
+            <div class="text-xs text-slate-400 mt-1 font-mono">AI-Powered Documentation & RAG</div>
+          </button>
+
+          <button class="arch-selector-btn w-full text-left p-4 rounded-lg border-l-2 border-slate-800 bg-slate-900/40 text-slate-400 hover:text-slate-200 font-medium text-sm transition-all" data-target="arch-vsam">
+            <div class="font-bold">VSAM-to-PostgreSQL Bridge</div>
+            <div class="text-xs text-slate-400 mt-1 font-mono">Heterogeneous Data Parity Pipeline</div>
+          </button>
+
+          <button class="arch-selector-btn w-full text-left p-4 rounded-lg border-l-2 border-slate-800 bg-slate-900/40 text-slate-400 hover:text-slate-200 font-medium text-sm transition-all" data-target="arch-leasewave">
+            <div class="font-bold">Odessa LeaseWave Platform</div>
+            <div class="text-xs text-slate-400 mt-1 font-mono">Financial Lease Lifecycle Engine</div>
+          </button>
+
+        </div>
+
+        <!-- Case Study Detail Panels (Right) -->
+        <div class="lg:col-span-8">
+          
+          <!-- Panel 1: Continuum -->
+          <div id="arch-continuum" class="arch-panel pro-card p-6 sm:p-8 space-y-6">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-mono uppercase text-blue-400 tracking-wider font-semibold">Enterprise Modernization</span>
+              <span class="badge-clean text-emerald-400">Production Deployed</span>
+            </div>
+            
+            <h4 class="text-xl font-bold text-white">Automated COBOL-to-Java Modernization Pipeline</h4>
+            
+            <div class="space-y-3 text-sm text-slate-300">
+              <p><strong>Challenge:</strong> Legacy financial and enterprise mainframes rely on decades-old COBOL monoliths with intricate dynamic program calls, JCL batch schedules, and complex copybooks that resist manual re-engineering.</p>
+              <p><strong>Architectural Solution:</strong> Engineered Java and Spring Boot backend orchestration services that parse legacy artifacts, resolve runtime dependency graphs, and automatically translate procedural COBOL logic into object-oriented Java 17/25 Spring Boot microservices.</p>
+              <p><strong>Deployment Engineering:</strong> Refactored application context initialization to enable seamless packaging as enterprise WARs deployable on IBM Open Liberty application servers.</p>
+            </div>
+
+            <div class="p-4 rounded-lg bg-slate-950 border border-slate-800 font-mono text-xs text-slate-300">
+              <div class="text-blue-400 mb-1">// Modernization Architecture Flow</div>
+              <div class="text-slate-400">Monolithic COBOL Source -> Parser & AST Generator -> Runtime Dynamic Resolver -> Spring Boot Microservices -> IBM Open Liberty WAR Container</div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="badge-clean">Java 25</span>
+              <span class="badge-clean">Spring Boot 3</span>
+              <span class="badge-clean">IBM Open Liberty</span>
+              <span class="badge-clean">Maven</span>
+              <span class="badge-clean">JCL</span>
+            </div>
+          </div>
+
+          <!-- Panel 2: AI Documentation -->
+          <div id="arch-ai-doc" class="arch-panel pro-card p-6 sm:p-8 space-y-6 hidden">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-mono uppercase text-blue-400 tracking-wider font-semibold">Generative AI & LLMs</span>
+              <span class="badge-clean text-blue-400">Azure OpenAI</span>
+            </div>
+
+            <h4 class="text-xl font-bold text-white">AI-Powered Legacy Documentation & RAG System</h4>
+
+            <div class="space-y-3 text-sm text-slate-300">
+              <p><strong>Challenge:</strong> Migrated legacy systems often lack documentation, leaving engineering teams to spend weeks reverse-engineering undocumented business logic and procedural branches.</p>
+              <p><strong>Architectural Solution:</strong> Implemented an automated documentation generation pipeline combining Azure OpenAI LLMs with Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP) integrations to index decomposed legacy code artifacts and synthesize technical documentation, call hierarchy graphs, and API specs.</p>
+            </div>
+
+            <div class="p-4 rounded-lg bg-slate-950 border border-slate-800 font-mono text-xs text-slate-300">
+              <div class="text-blue-400 mb-1">// GenAI Pipeline Flow</div>
+              <div class="text-slate-400">Code Chunks -> Vector Embeddings -> Vector Store -> Azure OpenAI LLM -> Structured Technical Documentation & Architecture Summaries</div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="badge-clean">Azure OpenAI</span>
+              <span class="badge-clean">RAG</span>
+              <span class="badge-clean">MCP</span>
+              <span class="badge-clean">Vector Stores</span>
+              <span class="badge-clean">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <!-- Panel 3: VSAM -->
+          <div id="arch-vsam" class="arch-panel pro-card p-6 sm:p-8 space-y-6 hidden">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-mono uppercase text-emerald-400 tracking-wider font-semibold">Database Engineering</span>
+              <span class="badge-clean text-emerald-400">Zero Data Loss</span>
+            </div>
+
+            <h4 class="text-xl font-bold text-white">VSAM-to-PostgreSQL Heterogeneous Data Bridge</h4>
+
+            <div class="space-y-3 text-sm text-slate-300">
+              <p><strong>Challenge:</strong> IBM mainframes store mission-critical data in VSAM (Keyed, Entry-Sequenced, and Relative Record) datasets whose non-relational access patterns do not naturally map to SQL relational tables.</p>
+              <p><strong>Architectural Solution:</strong> Engineered a robust data processing bridge that maps VSAM dataset structures directly to PostgreSQL schemas. Preserved record keying semantics and index integrity while maintaining transactional ACID compliance across concurrent batch executions.</p>
+            </div>
+
+            <div class="p-4 rounded-lg bg-slate-950 border border-slate-800 font-mono text-xs text-slate-300">
+              <div class="text-emerald-400 mb-1">// Data Parity Pipeline</div>
+              <div class="text-slate-400">VSAM KSDS/ESDS Records -> Byte-Level Schema Unmarshaller -> Spring Data JPA / JDBC -> PostgreSQL High-Concurrency Pool</div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="badge-clean">PostgreSQL</span>
+              <span class="badge-clean">VSAM</span>
+              <span class="badge-clean">Spring Data JPA</span>
+              <span class="badge-clean">JDBC</span>
+              <span class="badge-clean">SQL Optimization</span>
+            </div>
+          </div>
+
+          <!-- Panel 4: LeaseWave -->
+          <div id="arch-leasewave" class="arch-panel pro-card p-6 sm:p-8 space-y-6 hidden">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-mono uppercase text-blue-400 tracking-wider font-semibold">FinTech Enterprise Platform</span>
+              <span class="badge-clean text-blue-400">Odessa Technologies</span>
+            </div>
+
+            <h4 class="text-xl font-bold text-white">LeaseWave Enterprise Financial Management Services</h4>
+
+            <div class="space-y-3 text-sm text-slate-300">
+              <p><strong>Challenge:</strong> Large-scale equipment and asset lease management requires high precision in calculating depreciation schedules, asset amortization, and tax structures across multi-party contracts.</p>
+              <p><strong>Architectural Solution:</strong> Built and maintained Spring Boot microservices integrated with MongoDB to manage contract state machines, transactional financial records, and third-party financial exchange interfaces.</p>
+            </div>
+
+            <div class="p-4 rounded-lg bg-slate-950 border border-slate-800 font-mono text-xs text-slate-300">
+              <div class="text-blue-400 mb-1">// Financial Architecture Flow</div>
+              <div class="text-slate-400">Lease Events -> Spring Boot Microservices -> MongoDB Cluster -> Financial System Sync & Audit Logs</div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="badge-clean">Java</span>
+              <span class="badge-clean">Spring Boot</span>
+              <span class="badge-clean">MongoDB</span>
+              <span class="badge-clean">RESTful APIs</span>
+              <span class="badge-clean">FinTech</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <h2 class="text-xs font-mono font-semibold tracking-wider text-blue-400 uppercase">Skillsets</h2>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">Technical Matrix</h3>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="flex flex-wrap gap-2 text-xs">
+          <button class="skill-tab-btn px-3 py-1.5 rounded-md bg-blue-600 text-white border border-blue-500 font-medium transition-all" data-category="all">All Skills</button>
+          <button class="skill-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 border border-slate-700/60 font-medium hover:text-white transition-all" data-category="backend">Backend & Java</button>
+          <button class="skill-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 border border-slate-700/60 font-medium hover:text-white transition-all" data-category="ai">Generative AI</button>
+          <button class="skill-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 border border-slate-700/60 font-medium hover:text-white transition-all" data-category="db">Databases</button>
+          <button class="skill-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 border border-slate-700/60 font-medium hover:text-white transition-all" data-category="devops">DevOps & Cloud</button>
+          <button class="skill-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 border border-slate-700/60 font-medium hover:text-white transition-all" data-category="modernization">Modernization</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Group 1 -->
+        <div class="skill-group pro-card p-5" data-cat="backend">
+          <div class="flex items-center space-x-2.5 mb-3 text-white font-bold text-sm">
+            <i class="fab fa-java text-base text-blue-400"></i>
+            <span>Programming & Backend</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge-clean">Java 17 / 25</span>
+            <span class="badge-clean">Spring Boot 3 / 4</span>
+            <span class="badge-clean">Spring Data JPA</span>
+            <span class="badge-clean">Microservices</span>
+            <span class="badge-clean">RESTful APIs</span>
+            <span class="badge-clean">JDBC</span>
+          </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="skill-group pro-card p-5" data-cat="ai">
+          <div class="flex items-center space-x-2.5 mb-3 text-white font-bold text-sm">
+            <i data-lucide="bot" class="w-4 h-4 text-emerald-400"></i>
+            <span>Generative AI & LLMs</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge-clean">Azure OpenAI</span>
+            <span class="badge-clean">OpenAI APIs</span>
+            <span class="badge-clean">RAG Architecture</span>
+            <span class="badge-clean">Model Context Protocol (MCP)</span>
+            <span class="badge-clean">Vector Stores</span>
+            <span class="badge-clean">Prompt Engineering</span>
+            <span class="badge-clean">AI-Assisted Documentation</span>
+          </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="skill-group pro-card p-5" data-cat="db">
+          <div class="flex items-center space-x-2.5 mb-3 text-white font-bold text-sm">
+            <i data-lucide="database" class="w-4 h-4 text-blue-400"></i>
+            <span>Databases & Storage</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge-clean">PostgreSQL</span>
+            <span class="badge-clean">MongoDB</span>
+            <span class="badge-clean">H2 Database</span>
+            <span class="badge-clean">SQL Optimization</span>
+            <span class="badge-clean">VSAM File Migration</span>
+          </div>
+        </div>
+
+        <!-- Group 4 -->
+        <div class="skill-group pro-card p-5" data-cat="modernization">
+          <div class="flex items-center space-x-2.5 mb-3 text-white font-bold text-sm">
+            <i data-lucide="refresh-cw" class="w-4 h-4 text-purple-400"></i>
+            <span>Enterprise Modernization</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge-clean">COBOL-to-Java Modernization</span>
+            <span class="badge-clean">Mainframe Modernization</span>
+            <span class="badge-clean">JCL</span>
+            <span class="badge-clean">VSAM Datasets</span>
+            <span class="badge-clean">Dynamic Call Resolution</span>
+          </div>
+        </div>
+
+        <!-- Group 5 -->
+        <div class="skill-group pro-card p-5" data-cat="devops">
+          <div class="flex items-center space-x-2.5 mb-3 text-white font-bold text-sm">
+            <i data-lucide="server" class="w-4 h-4 text-emerald-400"></i>
+            <span>DevOps & Deployment</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge-clean">IBM Open Liberty</span>
+            <span class="badge-clean">Docker</span>
+            <span class="badge-clean">Apache Tomcat</span>
+            <span class="badge-clean">Maven</span>
+            <span class="badge-clean">Git & GitHub</span>
+            <span class="badge-clean">CI/CD Pipelines</span>
+            <span class="badge-clean">Linux</span>
+          </div>
+        </div>
+
+        <!-- Group 6 -->
+        <div class="skill-group pro-card p-5" data-cat="backend">
+          <div class="flex items-center space-x-2.5 mb-3 text-white font-bold text-sm">
+            <i data-lucide="shield-check" class="w-4 h-4 text-rose-400"></i>
+            <span>Testing & Methodologies</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge-clean">JUnit</span>
+            <span class="badge-clean">Automated Testing</span>
+            <span class="badge-clean">Regression Workflows</span>
+            <span class="badge-clean">Root Cause Analysis</span>
+            <span class="badge-clean">Agile / Scrum</span>
+            <span class="badge-clean">Code Reviews</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="mb-8">
+        <h2 class="text-xs font-mono font-semibold tracking-wider text-blue-400 uppercase">Academics</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">Education & Honors</h3>
+      </div>
+
+      <div class="pro-card p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-1">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div class="space-y-1">
+            <h4 class="text-xl font-bold text-white">Sri Eshwar College of Engineering</h4>
+            <p class="text-sm font-semibold text-blue-400">Bachelor of Engineering (B.E.) — Computer and Communication Engineering (CCE)</p>
+            <p class="text-xs text-slate-400 font-mono">August 2019 - May 2023 • Coimbatore, India</p>
+            <p class="text-sm text-slate-300 pt-2 leading-relaxed">
+              Rigorous coursework in Data Structures & Algorithms, Object-Oriented Analysis & Design, Operating Systems, Database Management Systems, Computer Networks, and Distributed Computing. Selected via competitive On-Campus Placement at Odessa Technologies.
+            </p>
+          </div>
+        </div>
+
+        <div class="md:text-right shrink-0 pt-4 md:pt-0 border-t md:border-t-0 border-slate-800">
+          <div class="text-3xl font-extrabold text-blue-400">89.90%</div>
+          <div class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mt-0.5">First Class with Distinction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Inquiries Section -->
+    <section id="contact" class="pb-12">
+      <div class="mb-10">
+        <h2 class="text-xs font-mono font-semibold tracking-wider text-blue-400 uppercase">Contact</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">Get in Touch</h3>
+        <p class="text-slate-400 text-sm mt-1">For career opportunities, technical discussions, or consulting inquiries, feel free to reach out directly.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Contact Cards (Left) -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <div class="pro-card p-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="p-2 rounded bg-slate-900 border border-slate-800 text-blue-400">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400 font-mono">Email</div>
+                <a href="mailto:indhudurai201@gmail.com" class="text-sm font-semibold text-white hover:text-blue-400 transition-colors">indhudurai201@gmail.com</a>
+              </div>
+            </div>
+            <button class="copy-trigger p-2 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-white" data-copy-val="indhudurai201@gmail.com" title="Copy Email">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <div class="pro-card p-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="p-2 rounded bg-slate-900 border border-slate-800 text-emerald-400">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400 font-mono">Phone</div>
+                <a href="tel:+916369882590" class="text-sm font-semibold text-white hover:text-emerald-400 transition-colors">+91 6369882590</a>
+              </div>
+            </div>
+            <button class="copy-trigger p-2 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-white" data-copy-val="+916369882590" title="Copy Phone">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <div class="pro-card p-4 flex items-center space-x-3">
+            <div class="p-2 rounded bg-slate-900 border border-slate-800 text-slate-300">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400 font-mono">Location</div>
+              <div class="text-sm font-semibold text-white">Bengaluru, Karnataka, India</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <a href="https://linkedin.com/in/indhumathi-c-a5277b23a/" target="_blank" rel="noopener noreferrer" class="p-3 rounded-lg border border-slate-800 hover:border-blue-500/60 bg-slate-900/60 text-slate-300 hover:text-blue-400 font-medium text-xs flex items-center justify-center space-x-2 transition-colors">
+              <i class="fab fa-linkedin-in text-sm"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+
+            <a href="https://github.com/indhumathi120" target="_blank" rel="noopener noreferrer" class="p-3 rounded-lg border border-slate-800 hover:border-slate-600 bg-slate-900/60 text-slate-300 hover:text-white font-medium text-xs flex items-center justify-center space-x-2 transition-colors">
+              <i class="fab fa-github text-sm"></i>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Direct Message Form (Right) -->
+        <div class="lg:col-span-7 pro-card p-6 sm:p-8">
+          <h4 class="text-base font-bold text-white mb-1">Direct Message</h4>
+          <p class="text-xs text-slate-400 mb-6">Send an inquiry or opportunity overview directly to Indhumathi.</p>
+
+          <form id="contact-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-name" class="block text-xs font-mono text-slate-400 mb-1">Full Name *</label>
+                <input id="form-name" type="text" required placeholder="e.g. Sarah Jenkins" class="w-full px-3.5 py-2.5 rounded bg-slate-950 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+              <div>
+                <label for="form-email" class="block text-xs font-mono text-slate-400 mb-1">Email Address *</label>
+                <input id="form-email" type="email" required placeholder="e.g. sjenkins@enterprise.com" class="w-full px-3.5 py-2.5 rounded bg-slate-950 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-org" class="block text-xs font-mono text-slate-400 mb-1">Company / Organization</label>
+                <input id="form-org" type="text" placeholder="e.g. Cloud Enterprise Inc." class="w-full px-3.5 py-2.5 rounded bg-slate-950 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+              <div>
+                <label for="form-subject" class="block text-xs font-mono text-slate-400 mb-1">Subject</label>
+                <input id="form-subject" type="text" placeholder="e.g. Senior Java Backend Opportunity" class="w-full px-3.5 py-2.5 rounded bg-slate-950 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+            </div>
+
+            <div>
+              <label for="form-message" class="block text-xs font-mono text-slate-400 mb-1">Message *</label>
+              <textarea id="form-message" rows="4" required placeholder="Share details about the role, technical scope, or discussion topic..." class="w-full px-3.5 py-2.5 rounded bg-slate-950 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-blue-500 transition-colors"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-2.5 rounded bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-colors flex items-center justify-center space-x-2 shadow-sm">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      
+      <div class="flex items-center space-x-2">
+        <span class="font-bold text-slate-300">Indhumathi C</span>
+        <span>•</span>
+        <span>Java Backend Developer & Generative AI Specialist</span>
+        <span>•</span>
+        <span>Bengaluru, India</span>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://linkedin.com/in/indhumathi-c-a5277b23a/" target="_blank" class="hover:text-blue-400 transition-colors">LinkedIn</a>
+        <a href="https://github.com/indhumathi120" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <a href="mailto:indhudurai201@gmail.com" class="hover:text-blue-400 transition-colors">Email</a>
+        <a href="#" class="hover:text-slate-300 transition-colors flex items-center space-x-1">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up" class="w-3 h-3"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
